@@ -1,0 +1,381 @@
+div a,table,body,#shape,#coeur2, p{
+	position: relative;
+	display: fixed;
+} 
+body{
+	background-color: #191618;
+	width: 90%;
+	height: 80%;
+}
+
+div a{
+	float: left;
+	margin: 10px;
+	padding: 0 20px;
+	text-decoration: none;
+	line-height: 23px;
+	height: 20px;
+	font-size: 17px;
+	color: #bf5061;
+	transition: 0.5s;
+	font-family:Nunito Bold;
+}
+div a:hover{
+	background:#d75a6e;
+	border-radius: 60px;
+	color: white;
+}
+table{
+	margin-top: 50px;
+	margin-left: 60px;
+}
+.title{
+	margin-top: 40px;
+	color: #d75a6e;
+	font-size: 60px;
+	margin-left: 200px;
+	font-family: Poppins Bold;
+}
+#p1{
+	margin-top:0px;
+	color: white;
+	font-size: 20px;
+	margin-left: 60px;
+}
+#p2{
+	float: left;
+	margin-top:1px;
+	color: white;
+	font-size: 20px;
+	margin-left: 130px;
+}
+button{
+font-family: Poppins Bold;
+display: inline-block;
+margin-top: 30px;
+border-radius: 60px;
+margin-left: -180px;
+height: 40px;
+width: 160px;
+background-color: #bf5061;
+color: white;
+border:none;
+font-size: 20px;
+}
+button:hover{
+background-color: white;
+color:#bf5061 ;
+}
+#social{
+	margin-top:15px;
+	margin-left: 180px;
+}  
+#shape{
+	position: absolute;
+	margin-left:750px;
+	margin-top:-350px;
+   border-radius: 250px;
+   border:20px solid #bf5061; 
+
+   
+}
+#coeur1{
+	float: left;
+	margin-bottom: -350px;
+	margin-left: 1050px;
+}
+#coeur2{
+	float:left;
+	margin-left: 370px;
+}
+#coeur3{
+	margin-left: 550px;
+	margin-top: -10px;
+}
+#coeur4{
+	float: left;
+	margin-left:220px;
+}
+#coeur5{
+	float: left;
+	margin-left:50px;
+}
+#coeur6{
+	float: left;
+	margin-left:420px;
+}
+#coeur7{
+	float: left;
+	margin-left:170px;
+	margin-top: 70px;
+}
+.Contact{
+	color: white;
+	margin-top: 0px;
+	font-size: 20px;
+	margin-left: 400px;
+}
+.Formulaire{
+margin-left: 300px;
+color: white;
+padding: 10px;
+}
+
+
+#mdp{
+	margin-left: -270px;
+}
+#Autre{
+	margin-left: 20px;
+}
+textarea{
+	width: 200px;
+	height: 100px;
+	border-radius: 10px;
+}
+input{
+border-radius: 10px;
+height: 30px;
+width: 200px;
+}
+.envoi{
+	height: 40px;
+	width: 100px;
+	background-color: #bf5061;
+}
+.recettes, .histoire{
+	color: white;
+	font-size: 15px;
+}
+.R2{
+	font-size: 20px;
+	float: right;
+	margin-top: -600px;
+	color: white;
+}
+.R3{
+	float:right;
+	margin-top: -550px;
+}
+#buy{
+	border-radius: 10px;
+height: 30px;
+width: 200px;
+}
+#produits{
+	margin-top: 20px;
+	color:#bf5061; 
+	font-size: 20px;
+}
+.cake1{
+	margin-left: 400px;
+	margin-top: 320px;
+	background-color:#bf5061;
+	box-shadow: 0 15px 50px solid #bf5061;
+	position: absolute;
+	color: white;
+	font-size: 17px;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 20px;
+	border-radius: 65px;
+	box-sizing: border-box;
+	float: left;
+
+}
+.cercle{
+	width: 200px;
+	height: 200px;
+	background: url(./imgcake.html/cakechoco.png);
+	background-size: 100% 100%;
+	border-radius: 100px;
+	float: left;
+	shape-outside: circle();
+}
+
+.cake2{
+	margin-top: 320px;
+	margin-left: 950px;
+	background-color:#bf5061;
+	box-shadow: 0 15px 50px solid #bf5061;
+	position: absolute;
+	color: white;
+	font-size: 17px;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 20px;
+	border-radius: 85px;
+	box-sizing: border-box;
+	float: right;
+
+}
+.cercle2{
+	width: 200px;
+	height: 200px;
+	background: url(./imgcake.html/cake2.png);
+	background-size: 100% 100%;
+	border-radius: 100px;
+	float: left;
+	shape-outside: circle();
+}
+.cake3{
+	margin-top: 320px;
+	margin-left: 1500px;
+	background-color:#bf5061;
+	box-shadow: 0 15px 50px solid #bf5061;
+	position: absolute;
+	color: white;
+	font-size: 17px;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 20px;
+	border-radius: 85px;
+	box-sizing: border-box;
+	float: right;
+
+}
+.cercle3{
+	width: 200px;
+	height: 200px;
+	background: url(./imgcake.html/cake3.png);
+	background-size: 100% 100%;
+	border-radius: 100px;
+	float: left;
+	shape-outside: circle();
+}
+.cake4{
+	margin-top: 920px;
+	margin-left: 300px;
+	background-color:#bf5061;
+	box-shadow: 0 15px 50px solid #bf5061;
+	position: absolute;
+	color: white;
+	font-size: 17px;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	height: 400px;
+	padding: 20px;
+	border-radius: 85px;
+	box-sizing: border-box;
+	float: right;
+
+}
+.cercle4{
+	width: 200px;
+	height: 200px;
+	background: url(./imgcake.html/cake4.png);
+	background-size: 100% 100%;
+	border-radius: 100px;
+	float: left;
+	shape-outside: circle();
+}
+.cake5{
+	margin-top: 950px;
+	margin-left: 850px;
+	background-color:#bf5061;
+	box-shadow: 0 15px 50px solid #bf5061;
+	position: absolute;
+	color: white;
+	font-size: 17px;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 20px;
+	border-radius: 85px;
+	box-sizing: border-box;
+	float: right;
+
+}
+.cercle5{
+	width: 200px;
+	height: 200px;
+	background: url(./imgcake.html/cake5.png);
+	background-size: 100% 100%;
+	border-radius: 100px;
+	float: left;
+	shape-outside: circle();
+}
+.cake6{
+	margin-top: 950px;
+	margin-left: 1450px;
+	background-color:#bf5061;
+	box-shadow: 0 15px 50px solid #bf5061;
+	position: absolute;
+	color: white;
+	font-size: 17px;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 20px;
+	border-radius: 85px;
+	box-sizing: border-box;
+	float: right;
+
+}
+.cercle6{
+	width: 200px;
+	height: 200px;
+	background: url(./imgcake.html/cake6.png);
+	background-size: 100% 100%;
+	border-radius: 100px;
+	float: left;
+	shape-outside: circle();
+}
+.cake7{
+	margin-top: 1650px;
+	margin-left: 750px;
+	background-color:#bf5061;
+	box-shadow: 0 15px 50px solid #bf5061;
+	position: absolute;
+	color: white;
+	font-size: 17px;
+	transform: translate(-50%, -50%);
+	width: 400px;
+	padding: 20px;
+	border-radius: 85px;
+	box-sizing: border-box;
+	float: right;
+
+}
+.cercle7{
+	width: 200px;
+	height: 200px;
+	background: url(./imgcake.html/cake8.png);
+	background-size: 100% 100%;
+	border-radius: 100px;
+	float: left;
+	shape-outside: circle();
+}
+.social{
+	margin-top: 900px;
+}
+footerA{
+	margin-top: 800px;
+	
+	margin-left: 900px;
+	list-style-type: none;
+}
+footerA a{
+	text-decoration: none;
+}
+footerA a:hover{
+	background-color:#bf5061;
+	color: white;
+
+	} 
+footer{
+float: right;
+margin-top: 1400px;
+}
+footer a{
+	text-decoration: none;
+	list-style-type: none;
+	color: white;
+}
+footer a:hover{
+	background-color:#bf5061;
+	color: white; 
+}
+.prix{
+	color: black;
+	font-size: 30px;
+	padding: 0px;
+}
