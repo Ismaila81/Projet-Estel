@@ -1,0 +1,128 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	height: 80%;
+	width: 100%;
+}
+.diapo1{
+	margin: 0px;
+	width:100%;
+	height: 600px;
+	border:3px solid red;
+	background-image: url("Images_projet.html/bgphoto.png");
+
+	webkit-animation-name:diapo1;
+	webkit-animation-duration:12s;
+	webkit-animation-timing-function:linear;
+	webkit-animation-iteration-count:infinite;
+	webkit-animation-duration:normal;
+
+	moz-animation-name:diapo1;
+	moz-animation-duration:12s;
+	moz-animation-timing-function:linear;
+	moz-animation-iteration-count:infinite;
+	moz-animation-duration:normal;
+
+	 	animation-name:diapo1;
+		animation-duration:12s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		animation-duration:normal;
+
+}
+@-webkit-keyframes diapo1{
+	17%{ background-image:url("Images_projet.html/im1.png");}
+	23%{background-image:url("Images_projet.html/im2.png");}
+	36%{background-image:url("Images_projet.html/im3.png");}
+	46%{background-image:url("Images_projet.html/im4.png");}
+	46%{background-image:url("Images_projet.html/im5.png");}
+	56%{background-image:url("Images_projet.html/im6.png");}
+	66%{background-image:url("Images_projet.html/im7.png");}
+	76%{background-image:url("Images_projet.html/im8.png");}
+}
+@-moz-keyframes diapo1{
+	17%{ background-image:url("Images_projet.html/im1.png");}
+	23%{background-image:url("Images_projet.html/im2.png");}
+	36%{background-image:url("Images_projet.html/im3.png")
+	46%{background-image:url("Images_projet.html/im4.png");}
+	56%{background-image:url("Images_projet.html/im5.png");}
+	66%{background-image:url("Images_projet.html/im6.png");}
+	76%{background-image:url("Images_projet.html/im7.png");}
+	86%{background-image:url("Images_projet.html/im8.png");}
+}
+@keyframes diapo1{
+	27%{ background-image:url("Images_projet.html/im1.png");}
+	23%{background-image:url("Images_projet.html/im2.png");}
+	36%{background-image:url("Images_projet.html/im3.png");}
+	46%{background-image:url("Images_projet.html/im4.png");}
+	56%{background-image:url("Images_projet.html/im5.png");}
+	66%{background-image:url("Images_projet.html/im6.png");}
+	76%{background-image:url("Images_projet.html/im7.png");}
+	96%{background-image:url("Images_projet.html/im8.png");}
+}
+
+.diapo2{
+	margin: 0px;
+	width: 900px;
+	height: 500px;
+	border:3px solid red;
+	background-image: url("");
+
+	webkit-animation-name:diapo2;
+	webkit-animation-duration:13s;
+	webkit-animation-timing-function:linear;
+	webkit-animation-iteration-count:infinite;
+	webkit-animation-duration:normal;
+
+
+
+		moz-animation-name:diapo2;
+		moz-animation-duration:9s;
+		moz-animation-timing-function:linear;
+		moz-animation-iteration-count:infinite;
+		moz-animation-duration:normal;
+
+	 	animation-name:diapo2;
+		animation-duration:9s;
+		animation-timing-function:linear;
+		animation-iteration-count:infinite;
+		animation-duration:normal;
+	
+
+		}
+		@-webkit-keyframes diapo2{
+			0%{ background-position: 0px 0px; }
+			30%{background-position: -900px 0px;}
+			65%{ background-position:-1920px 0px; }
+			100%{ background-position: -2880px 0px; }
+		}
+			@-moz-keyframes diapo2{
+			0%{ background-position: 0px 0px; }
+			30%{background-position: -900px 0px;}
+			65%{ background-position:-1920px 0px; }
+			100%{ background-position: -2880px 0px; }
+
+		}
+			@keyframes diapo2{
+			0%{ background-position: 0px 0px; }
+			30%{background-position: -900px 0px;}
+			65%{ background-position:-1920px 0px; }
+			100%{ background-position: -2880px 0px; }
+		}
+
+
+/*MENU TROIS DE DIAPO*/
+
+
+
+.PORTRAIT{
+	background: blue;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
