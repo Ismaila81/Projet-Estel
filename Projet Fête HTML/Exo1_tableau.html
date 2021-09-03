@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exo1_tableau</title>
+	<p> <strong>Exercice 2:</strong>Composez une page ressemblant à l'image suivante</p>
+</head>
+<body>
+<p><strong><font size="3">Voici la première parie:</font> </strong></p>
+<table border="1" cellspacing="1">
+	<tr>
+		<th width="170px">Un Tableau</th>
+		<th width="170px"></th>
+		<th width="170px"></th>
+	</tr>
+	<tr>
+		<td width="170px"></td>
+		<td width="170px">à6</td>
+		<td width="170px">cases</td>
+	</tr>
+</table>
+<p><font size="3">Voici la deuxième partie</font> </p>
+  <p><font color="red">Une liste</font></p>
+  <ol><!--liste ordonnée-->
+  	<li>Premier point</li>
+  	<ul>
+  	<li>Rubrique 1</li>
+  	<li>Rubrique 2</li>
+  	</ul>
+  </ol>
+  <ol>
+  	<li>2e Point</li>
+  </ol>
+  <ol>
+  	<li>3e Point</li>
+  	<ul>
+  		<li>Rubrique 1</li>
+  		<li>Rubrique 2</li>
+  	</ul>
+  </ol>
+<p><strong>Voici la trisième partie</strong> </p>
+<table border="2" cellpadding="5" cellspacing="5" >
+	<tr>
+<td width="120px">Un autre tableau</td><td width="150px"></td><td width="150px"></td><td width="150px"></td></tr>
+<tr><th rowspan="3" width="150px" height="15px"></th></tr>
+<td colspan="1"><table border="1"  cellpadding="10" cellspacing="2">
+<tr><th rowspan="1" colspan="3" width="120px" height="15"></th></tr>
+<tr><th rowspan="1" colspan="3" width="120px" height="15"></th></tr>
+<tr><th rowspan="1" colspan="3" width="120px" height="15"></th></tr>
+</table>
+<td width="120px" border="2"></td>
+<td width="120px" colspan="3" rowspan="1"><table border="2">
+	<th height="40" width="70px"></th><th width="70px"></th>
+</table></td>
+
+</table>
+
+<h2> <font size="5">Exercice 3: Un formulaire avec plein de choses !</font></h2>
+<p><font size="5"> Ecrivez le code HTML qui affiche le formulaire ci-desssous:</font></p>
+<form method="post" action="Mon formulaire.php">
+	<center>
+	<table border="0" width="40%">
+		<td>
+<tr>		
+	<th><label for="pseudo">Votre Pseudo</label></th>
+	<th><input type="text" id="pseudo" name="pseudo" required> </th><br></tr>
+	<tr>		
+	<th><label for="mdp">Votre mot de passe</label></th>
+	<th><input type="password" id="mdp" name="mdp"></th> <br></tr>
+	<th><label> Ressaisir votre mot de passe:</th>
+	<th><input type="password" id="Confirm_password" name="Confirm_password"></label></th> <br></tr>
+	<tr>
+	<th><label for="choix">OS préféré:</label></th>
+	<th><input type="radio" name="choix">Windows XP<br>
+	<input type="radio" name="choix">Windows Vista<br>
+	<input type="radio" name="choix">MacOS X<br>
+	<input type="radio" name="choix">linux<br>
+	<input type="radio" name="choix">Autres</th> <br></tr>
+	<tr>
+	<th><label for="choix">Vous possédez:</label> </th><br>
+	<th><input type="checkbox" name="choix">Un ordinateur de bureau<br>
+	<input type="checkbox" name="choix">Un portable<br>
+	<input type="checkbox" name="choix">Un netbook<br>
+	<input type="checkbox" name="choix">Une tablette(Pad)<br></th></tr>
+<tr>
+<th><label for="profession">Votre profession:</label></th>
+<th><select id="profession" name="profession">
+	<optgroup label="liste">
+		<option value="Chômeur">Chômeur</option>
+		<option value="Chômeur">Etudiant</option>
+		<option value="Chômeur">Finctionnaire</option>
+		<option value="Chômeur">Privé</option>
+		<option value="Chômeur">Rétraité</option>	
+	</optgroup>	
+	</tr>
+	<tr>
+	<td>
+		
+   <input type="submit" value="S'incrire !"> 
+   </center>
+   </td>
+</tr>
+	</th></tr>
+</select> <br>
+</td>
+
+    </table>
+</form>
+</center>
+</body>
+</html>
