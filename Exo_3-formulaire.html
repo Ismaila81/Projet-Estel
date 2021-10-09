@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire exo 3</title>
+</head>
+<body>
+    <div id="erreur" style="color: red;"></div>
+    <div id="pageRetro">
+       
+    <form action="" method="" id="inscription">
+    <h2>Formulaire</h2>
+    <br>
+    <br>
+    
+<input type="text" name="nom" id="prenom" placeholder="Nom:" > <br>
+<input type="email" name="email" id="email" placeholder="Couriel:" > <br>
+<input type="password" name="password" id="password" placeholder="Mot de passe:"> <br>
+<button type="submit" id="btn">Créer un compte</button>
+ </form>
+</div> 
+<div  style="text-align: center;">
+    <h1 >Exo 4</h1>
+    <p id="gro"> Pour m'agrandir ou me reduire cliquez-moi</p>
+</div>
+
+<div class="geometrie" id="BTN">
+    <h1>Exo 5</h1>
+    <div id="rectangle"></div>
+    <br>
+<button type="submit" id="btn-1" onclick="animation()" class="bttn">Augmenter la hauteur</button>
+<button type="submit" id="btn-2"class="bttn">Met le rectangle en vert</button>
+<button type="submit" id="btn-3" class="bttn"> Remet le rectangle en blue</button>
+<button type="submit"id="btn-4"class="bttn">Fait disparaître le rectancle</button>
+<button type="submit"id="btn-5"class="bttn">Fait reaparaitre le rectangle</button>
+
+</div>
+<br>
+
+ <style>
+     h2 {
+    margin-left: -30px;
+    width: 320px;
+    margin-top: -10px;
+    padding: 20px;
+    text-align: center;
+    color:rgb(136, 245, 181);
+    background-color: white;
+   }
+     form{
+    height: 400px;
+    width: 300px;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgb(136, 245, 181);
+    margin: 4% auto;
+     }
+    input {
+    color: teal;
+    border: 1px solid #ccc;
+        padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color:rgb(135, 235, 225);
+   }
+#btn {
+    width: 300px;
+    font-size: 110%;
+    font-weight: 100;
+    padding: 10px;
+    background: turquoise;
+    border-color: #f3e5e2;
+    border-radius: 30px;
+    color: #fff;
+    margin-top: 10px;
+   }
+.pageRetro{
+align-items: center;
+text-align: center;
+color: hsl(180, 10%, 92%)  ;
+height: 400px;
+width: 300px;
+font-size: 20px;
+padding: 15px 40px 40px;
+border: 1px solid #ccc;
+border-radius: 5px;
+background-color: rgb(50, 87, 65);
+margin: 4% auto;
+transition: 0.3s  ease-in;
+}
+#titre{
+    font-size: 40px;
+}
+.agrandir{
+    font-size: 70px;
+}
+
+#rectangle{
+    margin-left: 500px;
+    background: blue;
+    width: 100px;
+    height: 50px;
+}
+
+.geometrie{
+align-items: center;
+text-align: center;
+}
+.bttn{
+    border-radius: 30px;
+    background-color: #1f62df49;
+    width: 200px;
+    height: 30px;
+    
+}
+.nomR{
+    background-color: red;
+}
+
+ </style>
+ <script>
+     document.getElementById('inscription').addEventListener("submit",()=>{
+        var erreur=document.getElementById("erreur");
+         var prenom =document.getElementById("prenom");
+         var email =document.getElementById("email");
+         var mdp =document.getElementById("password");
+
+        
+        
+        
+         if(!prenom.value || !email.value || !password.value){
+             alert ("Renseignez tous les champs" );
+                  preventDefault();      
+         }
+         
+         else{ 
+            var pageRetro= document.getElementById("pageRetro");
+         pageRetro.classList.add("pageRetro");
+         document.getElementById("pageRetro").innerHTML=" <h1 style='color: #249faf '> <br> <br>Merci ! </h1> Votre compte a été crée avec succès";
+     }  
+    })
+    // grandir p avec un click
+    const agrandir = document.querySelector("#gro");
+   // console.log(grandir)
+    agrandir.addEventListener("click", ()=>{
+    agrandir.classList.toggle('agrandir');       
+    })
+    //evenement sur les buttons
+    let rectangle=document.querySelector("#rectangle");
+    let augmenterB=document.querySelector(".augmenterB");
+    //console.log(rectangle);
+    let btn1=document.querySelector('#btn-1');
+    let btn2=document.querySelector('#btn-2');
+    let btn3=document.querySelector('#btn-3');
+    let btn4=document.querySelector('#btn-4');
+    let btn5=document.querySelector('#btn-5');
+
+    //btn1.addEventListener("click", (e)=>{
+ //rectangle.style.height="110px";})
+ function animation() {
+
+let depart = null;
+const elem = document.getElementById("rectangle");  
+let position = 100;
+clearInterval(depart);
+depart = setInterval(frame,);
+function frame() {
+  if (position == 300) {
+      elem.style.height='100px';
+      elem.style.left='100px';
+    clearInterval(depart);
+  } else {
+    position++; 
+    elem.style.height='300px';
+    
+  }
+}
+}
+
+    btn2.addEventListener("click", (e)=>{
+    rectangle.style.background="green";
+   })
+   btn3.addEventListener("click", (e)=>{
+   rectangle.style.background="blue";
+})
+btn4.addEventListener("click", (e)=>{
+rectangle.style.visibility="hidden";
+ rectangle.style.height="0px";
+})
+btn5.addEventListener("click", (e)=>{
+ rectangle.style.height="100px";
+ rectangle.style.visibility="visible";
+})
+
+ </script>
+
+<br>
+
+
+<!-- onclick sur u rectancle sans button -->
+ 
+  <div id ="rectangleAnim" onclick="animationRec()"></div>
+
+
+
+<style type="text/css">
+  #rectangleAnim{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+    
+  }
+</style>
+
+<script> 
+function animationRec() {
+
+let id = null;
+const elem = document.getElementById("rectangleAnim");  
+let pos = 100;
+clearInterval(id);
+id = setInterval(frame, 5);
+function frame() {
+  if (pos == 300) {
+      elem.style.width='100px';
+      elem.style.right='100px';
+    clearInterval(id);
+  } else {
+    pos++; 
+    elem.style.width='300px';
+    //elem.style.top = pos + "px"; 
+   // elem.style.left = pos + "px"; 
+  }
+}
+}
+</script>
+
+
+
+</body>
+</html>
