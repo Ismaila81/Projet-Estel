@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire JS</title>
+</head>
+<body>
+   <div class="Formulaire">
+
+   	<div class="lien"><a href="#">S'inscrire</a>
+   	 </div>
+   	 <div class="lien" id="lien"><a href="#">Se Connecter</a>
+<hr style="width: 40%">
+   	 </div>
+   	<br>
+   	<form id="contact"  onsubmit="return validateForm()">
+		<p style="color: red;" id="erreur"></p>
+   		<div class="noms">
+         <div class="label" id="prenom">Prénom:</div>
+        <input type="text" placeholder="Votre Prénom:" id="prenom1" >
+		<p style="color: red;" id="erreur1"></p>
+       </div>
+       <div class="noms">
+         <div class="label">Nom:</div>
+        <input type="text" placeholder="Votre nom:" id="nom">
+       </div>
+        <div class="noms">
+        <div class="label" id="genre">Genre:</div>
+              <select>
+              	<option id="choix">----</option>
+                <option>Homme</option>
+                <option>Femme</option>
+              </select>
+            </div>
+       <div class="noms">
+         <div class="label">E-mail:</div>
+		 <input type="text " placeholder="Votre e-mail:" id="e-mail"><br>
+        <input type="text " placeholder="confirmer votre e-mail:" id="confirm-e-mail">
+        </div>
+        <div class="noms">
+         <div class="label">Date:</div>
+         <input type="text" placeholder="Exp: 03/00/1994 " id="happy">
+         </div>
+          <div class="noms">
+        <div class="label" >Pays:</div>
+              <select id="surnom">
+              	<option id="choix">----</option>
+              	<option>Sénégal</option>
+              	<option>Guinée</option>
+              	<option>Mali</option>
+              	<option>Côte D'ivoire</option>
+              	<option>Benin</option>
+              	<option>Togo</option>
+              	<option>G.Bisseau</option>
+              	<option>Maurtanie</option>
+              	<option>Maroc</option>
+              	<option>France</option>
+              	<option>Espagne</option>
+              	<option>Ruissie</option>
+              	<option>Italie</option>
+                <option>Belgique</option>
+                <option>Usa</option>
+                <option>Autres</option>
+              </select>
+            </div>
+             <div class="noms">
+        <div class="label" id="univert" >Universités:
+              <select id="UNI">
+              	<option id="choix">----</option>
+              	<option>UCAD</option>
+              	<option>UGB</option>
+              	<option>UAM</option>
+              	<option>ENSEPT</option>
+              	<option>IT Thies</option>
+              	<option>ADB</option>
+              	<option>ESP</option>
+              	<option>Etranger</option>
+              	<option>Autres</option>
+              	<option>France</option>
+              </select>
+            </div></div>
+         <div class="noms">
+         <div class="label">Télephone:</div>
+        <input type="text" placeholder="Exp: 781469695" maxlength="9" id="mobile">
+         </div>
+            <div class="noms">
+              <div class="label">Mot de Passe:</div>
+              <input type="password" placeholder="Saisissez votre mot de pase" id="mpd1">
+            </div>
+             <div class="noms">
+              <input type="password" placeholder="Confirmez votre mot de pase" id="mdp2">
+            </div>
+            <div class="btn">
+              <button class="submit" id="btn">Envoyer</button>
+            </div>
+		
+   	</form>
+   </div>
+   <style type="text/css">
+   	.lien  a{
+   		text-decoration: none;
+   		list-style-type: none;
+   		color: white;
+   		font-size: 20px;
+   		padding-bottom: 10px;
+   	}
+   	div  :hover a {
+   		border-radius: 30px;
+   		background-color: #d43f8d;
+   	}
+   
+	.Formulaire{
+		
+		color: white;
+		background-color: rgb(101, 101, 240);
+		align-items: center;
+		text-align: center;
+		
+	}
+	input {
+		margin-left: 300px;
+		width: 250px;
+		height: 25px;
+		border-radius: 20px;
+	}
+	select{
+		margin-left: 300px;
+		width: 250px;
+		height: 30px;
+		border-radius: 10px;
+	}
+
+	#UNI{
+		margin: 10px;
+   margin-left: 40px;
+	}
+	#btn{
+		background-color: gray;
+		color: white;
+		margin: 4px;
+		width: 200px;
+		height: 30px;
+		margin-left: 350px;
+		border-radius: 30px;
+	}
+  div #btn:hover{
+  background: #d43f8d;
+
+  }
+	.label{
+	margin-left: -200px;
+	}
+	#univert{
+	margin-left: 190px;
+	}
+	#lien{
+		margin-left: 250px;
+		margin-top: -20px;
+	}
+</style>
+
+<script>
+function idErreur(Id, Msg){
+	document.getElementById(Id).innerHTML = Msg;
+}
+document.getElementById("contact").addEventListener("submit", function(e){
+var erreur;	
+function validateForm() {
+
+var name = document.Form.prenom1.value;
+var name2 = document.Form.nom.value;
+var email = document.Form.email.value;
+var email2=document.Form.confirm-email.value;
+var password = document.Form.mdp1.value;
+var password = document.Form.mdp2.value;
+var genre = document.Form.genre.value;
+var Pays = document.Form.Pays.value;
+var Universités = document.Form.unersity.value;
+var mobile = document.Form.mobile.value;
+var naissance = document.Form.happy.value;
+
+
+erreur1=true;
+if (prenom1=""){
+	alert("champs vide")
+}
+
+}
+/*var allInpts=document.getElementsByTagName('input');
+    for ( var i=0; i<allInpts.length; i++){
+        if (!allInpts[i].value){
+    erreur="Veuillez renseigner tous les champs "
+        }
+    }*/
+    if (erreur){
+        e.preventDefault();
+        document.getElementById("erreur").innerHTML=erreur
+        return false;
+    } else{
+        alert("Votre formulaire a été bien envoyé !");
+    }
+     
+})
+
+
+</script>
+</body>
+
+</html>

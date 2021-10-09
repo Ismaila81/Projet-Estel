@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez nous</title>
+</head>
+<body>
+    <form name="Form" onsubmit="return valideFormu()" id="isncription">
+        <div id="erreur" style="color: red;"></div>
+        <h2>Formulaire d'inscroption</h2>
+        <div class="box"> 
+            <label for="">Nom:</label>
+            <input type="text" name="name" id="nom">
+            <div class="error" id="nomErr" style="color: red;"></div>
+        </div>
+        <div class="box"> 
+            <label for="">E-mail:</label>
+            <input type="text" name="email" id="email">
+            <div class="error" id="emailErr"></div>
+        </div>
+        <div class="box"> 
+            <label for="">Téléphone:</label>
+            <input type="text" name="mobile" id="mobile" maxlength="9">
+            <div class="error" id="mobileErr"></div>
+        </div>
+        <div class="box"> 
+            <label for="">Pays:</label>
+            <select name="pays" id="pays" >
+                <option>Senegal</option>
+                <option>Mali</option>
+                <option>Guinée</option>
+                <option> Côte d'Ivoire</option>
+            </select>
+            <div class="error" id="paysErr"></div>
+        </div>
+        <div class="box"> 
+            <label for="">Genre:</label>
+     <div class="form-inline" id="genre">
+        <label><input type="radio" name="genre" value="male">Homme</label>
+        <label><input type="radio" name="genre" value="female">Femme</label>
+     </div>
+    <div class="error" id="gendreErr"></div>
+        </div>
+        <div class="box">
+    <input type="submit" value="Envoyer"/>
+        </div>
+    </form>
+<style text="css">
+body{
+    font-size: 16px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: cornflowerblue;
+}
+.form{
+    width: 100%;
+}
+form{
+    width: 300px;
+    padding: 15px 40px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    margin:  4% auto;
+ }
+h2{
+    text-align: center;
+    color: rgb(236, 191, 10);
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+}
+label i{
+    color: #999;
+    font-size: 80%;
+}
+input, select{
+    border:  1px solid #ccc;
+    padding: 10px;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-color:#a9bae64a;
+}
+.box{
+    padding-bottom: 10px;
+
+}
+.form-inline{
+   border:  1px solid #ccc;
+   padding:  8px 10px 4px ;
+   border-radius: 2px; 
+}
+.form-inline label, .form-inline input{
+display: inline-block;
+width: auto;
+padding-right: 15px;
+
+}
+.error{
+    color: red;
+    font-size: 90%;
+}
+input[type="text"]{
+    outline: none;
+}
+input [type="submit"]{
+    font-size: 110%;
+    font-weight: 200;
+    background-color: #efbe58;
+    border-color: #efbe58;
+    box-shadow: 0 3px 0 #efbe58;
+    margin-top: 10px;
+    cursor: pointer;
+}
+input[type ="submit"]:hover{
+background: #bd432e;
+border-color: #bd432e;
+}
+.input-1{
+background-image: url(chekV.png);
+background-repeat: no-repeat;
+background-position: right 10px center;
+border: 1px solid #01cc40;
+}
+.input-2{
+background-image: url(chekR.png);
+background-repeat: no-repeat;
+background-position: right 10px center;
+border: 1px solid red;
+}
+.input-3{
+border: 1px solid #01cc40;
+}
+.input-4{
+border: 1px solid red;
+}
+
+</style>
+
+
+
+    <script >
+    
+    </script>
+</body>
+</html>

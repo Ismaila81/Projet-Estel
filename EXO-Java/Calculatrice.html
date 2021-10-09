@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calclatruce</title>
+</head>
+<body>
+    <div class="app">
+<h3 id="result"></h3>
+<button class="btn" id="9">9</button>
+<button class="btn" id="8">8</button>
+<button class="btn" id="7">7</button>
+<button class="btn" id="6">6</button>
+<button class="btn" id="5">5</button>
+<button class="btn" id="4">4</button>
+<button class="btn" id="3">3</button>
+<button class="btn" id="2">2</button>
+<button class="btn" id="1">1</button>
+<button class="btn" id="0">0</button>
+<button class="btn" id=".">.</button>
+<button class="btn" id="+">+</button>
+<button class="btn" id="-">-</button>
+<button id="equal">=</button>
+<button class="btn" id="*">*</button>
+<button class="btn" id="/">/</button>
+<button id="clear">C</button>
+    </div>
+    <p class="T">TINKITA</p>
+    <style class="text=css">
+        .app{
+display: grid;
+width: 700px;
+height: 600px;
+margin:  0 auto;
+grid-template-columns: 25% 25%  25% 25%;
+grid-template-rows: 100px repeat(5, 100px);
+grid-template-areas: 
+"res res res res"
+"7 8 9 reset"
+"4 5 6  reset"
+"1 2 3 reset"
+"0 dot plus minus"
+"equal equal times div"
+;
+border: 2px solid rgb(5, 182, 226);
+border-radius: 10px;
+        }
+h3{
+    text-align: right;
+    margin:  7px 10px 0 0;
+    font-size: 2rem;
+ grid-area: res;
+}
+.T{
+    background:teal;
+    width: 130px;
+    padding: 30px;
+    font-size: 30px;
+    align-items: center;
+    color:white;
+    margin-left: 328px;
+    margin-top: -600px;
+}
+.T:hover{
+    visibility: hidden;
+}
+ button{
+     background-color: teal;
+     color: white;
+     border-radius: 4px;
+     border: 1px solid white;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+ button:hover{
+     background: rgb(25, 248, 118);
+ }
+ #equal{
+     grid-area: equal;
+ }
+ #clear{
+     font-size: 40px;
+     color:white;
+     background:teal url('izoo11.jpg') no-repeat;
+     grid-area: reset;
+ }
+#clear:hover{
+    background: rgb(25, 248, 118);
+}
+
+    </style>
+    <script>
+        const buttons=document.querySelectorAll(".btn");
+        const result=document.getElementById("result");
+        buttons.forEach((button) =>{
+            button.addEventListener("click", (e)=>{
+            result.textContent+=e.target.id;
+            });
+        });
+        equal.addEventListener("click", ()=>{
+            result.textContent=eval(result.textContent);
+        }); 
+        clear.addEventListener('click',()=>{
+            result.textContent="";
+        });
+    </script>
+</body>
+</html>

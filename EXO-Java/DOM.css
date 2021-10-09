@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+
+}
+body{
+    text-align: center;
+    list-style: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: cornsilk;
+    min-height: 200vh;
+}
+.box{
+  border: 6px solid white;
+  transition: 0,25s ease;
+  background: black; 
+  padding: 10px;
+}
+p{
+    visibility: hidden;
+    width: 240px;
+    margin: 10px auto 0;
+}
+.DivCont{
+background:rgb(194, 10, 96);
+border-radius: 30px;
+border: 5px dashed chartreuse;
+}
+nav{
+    background-color: cornflowerblue;
+    position: fixed;
+   width: 100%;
+   height: 50px; 
+   top: -50px;
+
+
+   
+}
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+}

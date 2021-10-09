@@ -1,0 +1,26 @@
+
+<form>
+  <p>Entrer une adresse e-mail:</p>
+  <input id='email'>
+  <input type='button' id='valider' value='Valider' />
+</form>
+<script>
+function validerEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
+
+function valider() {
+  $("#resultat").text("");
+  var email = $("#email").val();
+  if (validerEmail(email)) {
+    $("#resultat").text(email + " est valide.");
+    $("#resultat").css("color", "green");
+  } else {
+    $("#resultat").text(email + " n'est pas valide.");
+    $("#resultat").css("color", "red");
+  }
+}
+
+$("#valider").bind("click", valider);
+</script>
