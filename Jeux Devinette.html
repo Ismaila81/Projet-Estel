@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jeux devinette</title>
+</head>
+<body>
+<script type="text/javascript">
+
+console.log("Bienvenue dans ce jeu de devinette !");
+console.log("Trouvez le nombre exact, compris entre 1 et 100. Vous avez 6 coups pour deviner.");
+var solutionOrdi = Math.floor(Math.random() * 100) + 1;
+
+for (var i = 1; i <= 6; i++) { 
+    var solutionJoueur = Number(prompt("Entrez un nombre entre 1 et 100 :"));
+    if (solutionJoueur === solutionOrdi) {
+        console.log("Vous avez proposez "+ solutionJoueur +".");
+        console.log("Félicitations, bravo !");
+        break; 
+    } else if ( solutionJoueur < solutionOrdi){ 
+        console.log("Vous avez proposez "+solutionJoueur +"." );
+            console.log("Ce numéro est trop petit");
+    } else {
+        console.log("Vous avez proposez "+solutionJoueur+'.');
+         console.log("Ce numéro est trop grand");
+ }
+    
+    
+     if (i==6){
+        console.log("Vous avez proposé "+solutionJoueur+'.');
+        console.log("Désolé , Vous avez dépassé le nombre de coups autorisés.");
+       alert('La solution est :'+solutionOrdi);
+       console.log('Vous avez perdu ! La réponse était:'+solutionOrdi);
+       break;
+    } 
+}
+</script>
+</body>
+</html>
