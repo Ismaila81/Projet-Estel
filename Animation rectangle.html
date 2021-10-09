@@ -1,0 +1,76 @@
+<p><button onclick="myMove()">Click Me</button></p> 
+
+<div id ="container">
+  <div id ="animate"></div>
+</div>
+
+
+
+<style type="text/css">
+  #animate{
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+  }
+</style>
+<script> 
+function myMove() {
+
+let id = null;
+const elem = document.getElementById("animate");  
+let pos = 100;
+clearInterval(id);
+id = setInterval(frame, 5);
+function frame() {
+  if (pos == 300) {
+      elem.style.width='100px';
+      elem.style.left='100px';
+    clearInterval(id);
+  } else {
+    pos++; 
+    elem.style.width='300px';
+    //elem.style.top = pos + "px"; 
+   // elem.style.left = pos + "px"; 
+  }
+}
+}
+</script>
+
+<br>
+
+
+  <div id ="rectangleAnim" onclick="animationRec()"></div>
+
+
+
+<style type="text/css">
+  #rectangleAnim{
+    width: 100px;
+    height: 50px;
+    background-color: blue;
+  }
+</style>
+<script> 
+function animationRec() {
+
+let id = null;
+const elem = document.getElementById("rectangleAnim");  
+let pos = 100;
+clearInterval(id);
+id = setInterval(frame, 5);
+function frame() {
+  if (pos == 300) {
+      elem.style.height='50px';
+      //elem.style.right='100px';
+    clearInterval(id);
+  } else {
+    pos++; 
+    elem.style.height='300px';
+    //elem.style.top = pos + "px"; 
+   // elem.style.left = pos + "px"; 
+  }
+}
+}
+</script>
+
+
